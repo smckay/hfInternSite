@@ -20,7 +20,7 @@ html, body {
 
 .header p {
 	color: #FFFFFF;
-	padding: 20%
+	padding: 30%
 }
 
 
@@ -91,5 +91,21 @@ html, body {
     width: 30%;
     padding-top: 15%;
     color: dark-gray;
+}
+
+
+.about_rightScroll {
+    float: right;
+    width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.about_rightScrollContent {
+    float: right;
+    font-family: Arial, sans-serif;
+    line-height: 2.5;
+    width: 30%;
 }
 
