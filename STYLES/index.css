@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin:0; 
+	height: 100%;
+}
+
+.header {
+	overflow: hidden;
+	position: fixed;
+	background-color: #3D3D3D;
+	top: 0;
+	width: 100%;
+	height: 11%;
+	display: flex;
+	align-items: center;
+}
+
+.header p {
+	color: #FFFFFF;
+	padding: 20%
+}
+
+
+.navbar {
+	overflow: hidden;
+	background-color: #E4E3E3;
+  	position: fixed;
+  	top: 11%;
+  	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 5.5%;
+}
+
+.navbar a {
+	float: left;
+  	display: block;
+  	color: #444444;
+ 	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+.Overview {
+	width: 100%;
+	height: 30%;
+	float: left;
+}
+
+
+
+.Overview2 {
+	width: 25%;
+	height: 40%;
+	float: left;
+}
+
+
+.Overview3 {
+	width: 50%;
+	height: 40%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	line-height: 2.5;
+	font-family: Arial, sans-serif;
+}
+
+/*
+.Overview4 {
+	width: 20%;
+	height: 40%;
+	float: left;
+	border: 1px solid blue;
+}	
+*/
+
+.textContainer {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    line-height: 2.5;
+    text-align: center;
+    width: 30%;
+    padding-top: 15%;
+    color: dark-gray;
+}
+
