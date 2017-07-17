@@ -20,7 +20,7 @@ html, body {
 
 .header p {
 	color: #FFFFFF;
-	padding: 20%
+	padding: 30%
 }
 
 
@@ -123,4 +123,60 @@ html, body {
     padding-top: 15%;
     color: dark-gray;
 }
+
+/*
+.about_rightScroll {
+    float: right;
+    width: 100%;
+    height: 40%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.about_rightScrollContent {
+    float: right;
+    font-family: Arial, sans-serif;
+    line-height: 2.5;
+    width: 30%;
+}
+*/
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.about-left, .about-middle, .about-right {
+    flex: 1 100%;
+    height: 500px;
+}
+
+.about-left {
+    order: 1;
+    font-family: Arial Rounded MT Bold, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+.about-middle {
+    order: 2;
+    flex-shrink: 1.5;
+}
+
+.about-right {
+    order: 3;
+    font-family: Futura, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+
+
+
+
+
+    
+
 
