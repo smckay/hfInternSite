@@ -9,27 +9,27 @@ $(document).ready(function(){
     });
 */
     $("#goToInternProgram").click(function(){
-	$(".about-right").animate({
+	$(".section-right").animate({
 	    scrollTop: 0}, scrollSpeed);
     });
 
     $("#goToMentoring").click(function(){
-	$('.about-right').animate({
+	$('.section-right').animate({
 	    scrollTop: posNext}, scrollSpeed);
     });
 
     $("#goToRoundtables").click(function(){
-	$('.about-right').animate({
+	$('.section-right').animate({
 	    scrollTop: posNext*2}, scrollSpeed);
    });
 
     $("#goToProjects").click(function(){
-	$('.about-right').animate({
+	$('.section-right').animate({
 	    scrollTop: posNext*3}, scrollSpeed);
     });
 
     $("#goToCollaterol").click(function(){
-	$('.about-right').animate({
+	$('.section-right').animate({
 	    scrollTop:posNext*4}, scrollSpeed);
     });
 
