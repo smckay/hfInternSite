@@ -7,6 +7,33 @@ html, body {
 	height: 100%;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.about-left li {
+    transition: color 0.15s, font-size 0.13s;
+    color: DodgerBlue;
+    font-size: 20px;
+    font-family: Arial Rounded MT Bold, sans-serif;
+    cursor: default;
+}
+
+.about-left li:hover {
+    transition: color 0.15s, font-size 0.13s;
+    color: black;
+    cursor: pointer;
+    font-size: 22px;
+    
+}
+
+/*
+.act {
+    color: black;
+    font-size: 22px;
+}
+*/
+
 .header {
 	overflow: hidden;
 	position: fixed;
@@ -149,9 +176,7 @@ html, body {
 
 .about-left {
     order: 1;
-    font-family: Arial Rounded MT Bold, sans-serif;
     text-align: center;
-    font-size: 20px;
     line-height: 2.5;
 }
 
@@ -164,8 +189,9 @@ html, body {
     order: 3;
     font-family: Futura, sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     overflow-y: scroll;
+    line-height: 2.0;
 }
 
 
