@@ -1,4 +1,0 @@
-function doTest() {
-    $('html, body').animate({
-	scrollTop:$(".mentoring").offset().top}, 'slow');
-}
