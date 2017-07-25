@@ -7,6 +7,10 @@ html, body {
 	height: 100%;
 }
 
+p {
+    font-family: Futura, sans-serif;
+}
+
 ul {
     list-style-type: none;
 }
