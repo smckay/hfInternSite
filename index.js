@@ -35,4 +35,34 @@ $(document).ready(function(){
 
 });
 
+function mouseOverOne(){
+	document.getElementById("answer1").style.display = "block";
+}
 
+function mouseOutOne(){
+	document.getElementById("answer1").style.display = "none";
+}
+
+function mouseOverTwo(){
+	document.getElementById("answer2").style.display = "block";
+}
+
+function mouseOutTwo(){
+	document.getElementById("answer2").style.display = "none";
+}
+
+function mouseOverThree(){
+	document.getElementById("answer3").style.display = "block";
+}
+
+function mouseOutThree(){
+	document.getElementById("answer3").style.display = "none";
+}
+
+function mouseOverFour(){
+	document.getElementById("answer4").style.display = "block";
+}
+
+function mouseOutFour(){
+	document.getElementById("answer4").style.display = "none";
+}

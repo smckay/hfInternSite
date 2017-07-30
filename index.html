@@ -11,8 +11,12 @@
   <body>
 
     <div class="header">
-      <p>Healthfirst Intern Program</p>
+	<div class="header-one"></div>
+	<div class="header-two"><img src="./IMAGES/logo.svg"></div>
+	<div class="header-three"><p>Intern Program</p></div>
     </div>
+
+    <div class="navbar-placeholder"></div>
 	
     <div class="navbar">
       <a href="#About">About the Intern Program</a>
@@ -25,14 +29,10 @@
     <div class="Overview"></div>
     <div class="Overview2"></div>
     <div class="Overview3">
-	<p>Healthfirst is a provider-sponsored health insurance company that serves more
-	than 1.2 million members in downstate New York. Healthfirst offers top-quality
-	Medicaid, Medicare Advantage, Child Health Plus, and Managed Long Term Care 
-	plans. Healthfirst Leaf Qualified Health Plans and he Healthfirst Essential Plan are
-	offered on NY State of Health, The Official Health Plan Marketplace. Beginning in
-	2017, Healthfirst is offering Healthfirst Pro and Pro Plus, Exclusive Provider
-	Organization (EPO) plans for small-business owners and their employees, and
-	Healthfirst Total, an EPO for individuals.
+	<p>
+	No filling coffee mugs or pushing paper here. The Summer Trailblazer Program is an immersive, interactive learning experience that lays a foundation for continued leadership development and success.  
+Summer Trailblazers become a part of the Healthfirst family, and they're valued for their fresh perspectives, enthusiasm, and innovation.
+<br><br>Learn more about our 10-week, paid internship program...
 	</p>
     </div>
     <div class="Overview4"></div>
@@ -44,7 +44,7 @@
 
     <p style="opacity: 0;">text</p>
 
-    <div style="padding-top: 20%;"></div>
+    <div style="padding-top: 20%;" id="About"></div>
     <div class="section-container">
 
       <div class="section-left">
@@ -131,9 +131,76 @@
  sed, placerat vel sem. Aliquam lacus purus, convallis a risus id, venenatis laoreet lectus. Ut et sollicitudin sem. Suspendisse potenti. Vivamus eros odio, ultricies eu varius vitae, pharetra id quam. Quisque fringilla venenatis ligula, sed egestas purus tincidunt a. Etiam molestie imperdiet metus, commodo lacinia purus blandit vitae. Nulla et diam leo. Pellentesque sodales pharetra mi in ullamcorper. Nullam iaculis turpis nec metus sodales, id iaculis tortor tempus. Proin vel justo neque. Vestibulum eget est quis leo fermentum elementum vitae a arcu. Donec vitae laoreet velit.</p> 
 	</div>
 
+      </div></div>
+
+    <p style="opacity: 0;">text</p>
+
+    <div style="padding-top: 50%;"></div>
+
+    <div class="section-container">
+
+      <div class="section-left faq-text">
+	<div class="faq-left"></div>
+	<div class="faq-right">FAQs</div>
       </div>
 
+      <div class="section-middle">
+	<hr width="1" size="500">
+      </div>
+
+      <div class="section-right">
+	<div class="table-top"></div>
+	<div class="table-bottom">
+	<table id="faq" cellpadding="10">
+		<tr class="clickable-row1" onmouseover="mouseOverOne()" onmouseout="mouseOutOne()"><td>I know nothing about health care. Will I still be a good fit at Healthfirst?</td></tr>
+		<tr><td id="answer1" style="display:none; background-color:#D8D8D8;">Absolutely not. We expect interns to know all the ins and outs of all healthcare legislation passed in the last century. Anything less is unacceptable and you should not bother applying</td></tr>
+		<tr class="clickable-row2" onmouseover="mouseOverTwo()" onmouseout="mouseOutTwo()"><td>What percentage of interns are given return offers for future internships or full time positions?</td></tr>
+		<tr><td id="answer2" style="display:none; background-color:#D8D8D8;">200% of interns get return offers of some kind. That's right, every itern not only gets to return to Healthfirst, but they also get to choose any other person they know to come work at Healthfirst.</td></tr>
+		<tr class="clickable-row3" onmouseover="mouseOverThree()" onmouseout="mouseOutThree()"><td>What is the dress code for interns?</td></tr>
+		<tr><td id="answer3" style="display:none; background-color:#D8D8D8;">All interns are expected to wear full suits every day. Anything less will result in immedate termination and blacklisting from every job you ever apply to.</td></tr>
+		<tr class="clickable-row4" onmouseover="mouseOverFour()" onmouseout="mouseOutFour()"><td>What types of events are held for interns?</td></tr>
+		<tr><td id="answer4" onmouseover="mouseOverFour()" onmouseout="mouseOutFour()" style="display:none; background-color:#D8D8D8;">No events are held for interns. We do not expect or allow them to get along together in any capacity.</td></tr>
+	</table>
+	</div>
+      </div></div>
+
       <div style="padding-top: 70%;"></div>
+
+    <p style="opacity: 0;">text</p>
+
+    <div class="section-container">
+
+      <div class="section-left">
+	<div class="connect-left"></div>
+	<div class="connect-right">Connect With Us</div>
+      </div>
+
+      <div class="section-middle">
+	<hr width="1" size="500">
+      </div>
+
+      <div class="section-right">
+	<div class="connect-top"></div>
+	<div class="connect-bottom">
+  		<form action="/action_page.php">
+    		<input type="text" id="fname" name="firstname" placeholder="First Name">
+
+    		<input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+		<input type="text" id="email" name="email" placeholder="Email Address">
+
+    		<input type="text" id="school" name="school" placeholder="School">
+
+    		<input type="text" id="gradyear" name="gradyear" placeholder="Graduation Year">
+
+		<textarea id="content" name="content" placeholder="Write something.." style="height:200px"></textarea>
+    		
+		<input type="submit" value="Submit">
+  		</form>
+	</div>
+	</div>
+      </div>
+
   </body>
 </html>
 
