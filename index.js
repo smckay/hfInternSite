@@ -1,38 +1,44 @@
-$(document).ready(function(){
-    var scrollSpeed = 1200;
-    var posNext = 400;
 /*
-    var $leftItems = $(".about-left li");
-    $leftItems.click(function(){
-	$leftItems.removeClass('act');
-	$(this).addClass('act');
-    });
+  smoothScrollTo::
+    @itemClick: id/class name the user will click on, activating a scroll event.
+    @itemScrollActiv: section in which the scrolling will occur.
+    @posValue: position coordinates in which the scrolling should scroll to.
+    @scrollSpeed: speed of scrolling.
 */
-    $("#goToInternProgram").click(function(){
-	$(".section-right").animate({
-	    scrollTop: 0}, scrollSpeed);
+function smoothScrollTo(itemClick, itemScrollActiv, posValue, scrollSpeed) {
+    $(itemClick).click(function(){
+	$(itemScrollActiv).animate({
+	    scrollTop: posValue}, scrollSpeed);
     });
+}
 
-    $("#goToMentoring").click(function(){
-	$('.section-right').animate({
-	    scrollTop: posNext}, scrollSpeed);
-    });
+$(document).ready(function(){
+    var scrollSpeed = 1200; //constants
+    var posNext = 580;
 
-    $("#goToRoundtables").click(function(){
-	$('.section-right').animate({
-	    scrollTop: posNext*2}, scrollSpeed);
-   });
+// SECTION VARIABLES: Insert the class name of the auto scrolling sections in their respective variables.
+// --------------------------------------------------------------------------
+    var aboutSection = ".section-about-right";
+    var internSection = ".section-intern-right";
+// -------------------------------------------------------------------------- 
 
-    $("#goToProjects").click(function(){
-	$('.section-right').animate({
-	    scrollTop: posNext*3}, scrollSpeed);
-    });
+// SECTION: ABOUT
+// All jQuery/Javascript functions pertaining to ABOUT section
+// --------------------------------------------------------------------------
+    smoothScrollTo("#goToInternProgram", aboutSection, 0, scrollSpeed);
+    smoothScrollTo("#goToMentoring", aboutSection, posNext, scrollSpeed);
+    smoothScrollTo("#goToRoundtables", aboutSection, (posNext*2)-55, scrollSpeed);
+    smoothScrollTo("#goToProjects", aboutSection, (posNext*3)-120, scrollSpeed);
+    smoothScrollTo("#goToCollaterol", aboutSection, posNext*4, scrollSpeed);
+// --------------------------------------------------------------------------
 
-    $("#goToCollaterol").click(function(){
-	$('.section-right').animate({
-	    scrollTop:posNext*4}, scrollSpeed);
-    });
-
+// SECTION: INTERN
+// All jQuery/Javascript functions pertaining to INTERN section
+// --------------------------------------------------------------------------
+    smoothScrollTo("#goToInternExperience", internSection, 0, scrollSpeed);
+    smoothScrollTo("#goToVideos", internSection, posNext, scrollSpeed);
+    smoothScrollTo("#goToTestimonials", internSection, posNext*2, scrollSpeed);
+// --------------------------------------------------------------------------
 });
 
 function mouseOverOne(){

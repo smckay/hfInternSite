@@ -7,24 +7,12 @@ html, body {
 	height: 100%;
 }
 
+p {
+    font-family: Futura, sans-serif;
+}
+
 ul {
     list-style-type: none;
-}
-
-.section-left li {
-    transition: color 0.15s, font-size 0.13s;
-    color: DodgerBlue;
-    font-size: 20px;
-    font-family: Arial Rounded MT Bold, sans-serif;
-    cursor: default;
-}
-
-.section-left li:hover {
-    transition: color 0.15s, font-size 0.13s;
-    color: black;
-    cursor: pointer;
-    font-size: 22px;
-    
 }
 
 /*
@@ -158,6 +146,14 @@ ul {
 	justify-content: center;
 }
 
+.circle:hover {
+    border-radius: 80%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    cursor: pointer;
+}
+
 .triangle {
 	width: 0;
 	height: 0;
@@ -174,6 +170,22 @@ ul {
     width: 30%;
     padding-top: 15%;
     color: dark-gray;
+}
+
+.section-about-left li, .section-intern-left li {
+    transition: color 0.15s, font-size 0.13s;
+    color: DodgerBlue;
+    font-size: 20px;
+    font-family: Arial Rounded MT Bold, sans-serif;
+    cursor: default;
+}
+
+.section-about-left li:hover, .section-intern-left li:hover {
+    transition: color 0.15s, font-size 0.13s;
+    color: black;
+    cursor: pointer;
+    font-size: 22px;
+    
 }
 
 /*
@@ -193,29 +205,29 @@ ul {
 }
 */
 
-.section-container {
+.section-about-container, .section-intern-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-.section-left, .section-middle, .section-right {
+.section-about-left, .section-intern-left, .section-about-middle, .section-intern-middle, .section-about-right, .section-intern-right {
     flex: 1 100%;
     height: 500px;
 }
 
-.section-left {
+.section-about-left, .section-intern-left {
     order: 1;
     text-align: center;
     line-height: 2.5;
 }
 
-.section-middle {
+.section-about-middle, .section-intern-middle {
     order: 2;
     flex-shrink: 1.5;
 }
 
-.section-right {
+.section-about-right, .section-intern-right {
     order: 3;
     font-family: Futura, sans-serif;
     text-align: center;
@@ -287,5 +299,35 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.section-left, .section-middle, .section-right {
+    flex: 1 100%;
+    height: 500px;
+}
+
+.section-left {
+    order: 1;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.section-middle {
+    order: 2;
+    flex-shrink: 1.5;
+}
+
+.section-right {
+    order: 3;
+    font-family: Futura, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    overflow-y: scroll;
+    line-height: 2.0;
+}
 
 
