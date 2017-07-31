@@ -15,7 +15,7 @@ function smoothScrollTo(itemClick, itemScrollActiv, posValue, scrollSpeed) {
 $(document).ready(function(){
     var scrollSpeed = 1200; //constants
     var posNext = 580;
-    var secNext = 550;
+    var secNext = 230;
 // SECTION VARIABLES: Insert the class name of the auto scrolling sections in their respective variables.
 // --------------------------------------------------------------------------
     var aboutSection = ".section-about-right";
