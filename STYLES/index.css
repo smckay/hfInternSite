@@ -335,4 +335,20 @@ input[type=submit] {
     line-height: 2.0;
 }
 
+.overview-text{
+    font-family: "museo-sans";
+}
 
+@media only screen and (max-width: 768px) {
+    .header, .header-one, .heaader-two, .header-three, .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4 {
+        display: none;
+    }
+
+    .Overview3{
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+}
