@@ -172,7 +172,7 @@ ul {
     color: dark-gray;
 }
 
-.section-about-left li, .section-intern-left li {
+.section-about-left li, .section-intern-left li, .section-HF-left li {
     transition: color 0.15s, font-size 0.13s;
     color: DodgerBlue;
     font-size: 20px;
@@ -180,7 +180,7 @@ ul {
     cursor: default;
 }
 
-.section-about-left li:hover, .section-intern-left li:hover {
+.section-about-left li:hover, .section-intern-left li:hover, .section-HF-left li:hover {
     transition: color 0.15s, font-size 0.13s;
     color: black;
     cursor: pointer;
@@ -205,29 +205,29 @@ ul {
 }
 */
 
-.section-about-container, .section-intern-container {
+.section-about-container, .section-intern-container, .section-HF-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-.section-about-left, .section-intern-left, .section-about-middle, .section-intern-middle, .section-about-right, .section-intern-right {
+.section-about-left, .section-intern-left, .section-HF-left, .section-about-middle,.section-intern-middle,.section-HF-middle, .section-about-right, .section-intern-right, .section-HF-right {
     flex: 1 100%;
     height: 500px;
 }
 
-.section-about-left, .section-intern-left {
+.section-about-left, .section-intern-left, .section-HF-left {
     order: 1;
     text-align: center;
     line-height: 2.5;
 }
 
-.section-about-middle, .section-intern-middle {
+.section-about-middle, .section-intern-middle, .section-HF-middle {
     order: 2;
     flex-shrink: 1.5;
 }
 
-.section-about-right, .section-intern-right {
+.section-about-right, .section-intern-right, .section-HF-right {
     order: 3;
     font-family: Futura, sans-serif;
     text-align: center;
@@ -239,6 +239,11 @@ ul {
 td {
     border: 1px solid black;
 }
+
+.spaceAdder {
+    padding-top: 30%;
+}
+
 
 table {
     border-collapse: collapse;
