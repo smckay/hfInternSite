@@ -15,13 +15,15 @@ function smoothScrollTo(itemClick, itemScrollActiv, posValue, scrollSpeed) {
 $(document).ready(function(){
     var scrollSpeed = 1200; //constants
     var posNext = 580;
-
+    var secNext = 550;
 // SECTION VARIABLES: Insert the class name of the auto scrolling sections in their respective variables.
 // --------------------------------------------------------------------------
     var aboutSection = ".section-about-right";
     var internSection = ".section-intern-right";
 // -------------------------------------------------------------------------- 
 
+    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top+secNext, scrollSpeed);
+    
 // SECTION: ABOUT
 // All jQuery/Javascript functions pertaining to ABOUT section
 // --------------------------------------------------------------------------
@@ -30,6 +32,8 @@ $(document).ready(function(){
     smoothScrollTo("#goToRoundtables", aboutSection, (posNext*2)-55, scrollSpeed);
     smoothScrollTo("#goToProjects", aboutSection, (posNext*3)-120, scrollSpeed);
     smoothScrollTo("#goToCollaterol", aboutSection, posNext*4, scrollSpeed);
+    
+    smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top+secNext, scrollSpeed);
 // --------------------------------------------------------------------------
 
 // SECTION: INTERN
@@ -38,8 +42,17 @@ $(document).ready(function(){
     smoothScrollTo("#goToInternExperience", internSection, 0, scrollSpeed);
     smoothScrollTo("#goToVideos", internSection, posNext, scrollSpeed);
     smoothScrollTo("#goToTestimonials", internSection, posNext*2, scrollSpeed);
+
+    smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top+secNext, scrollSpeed);
+
+    smoothScrollTo("#scrollToFAQ", "html, body", $("#FAQ").offset().top+secNext, scrollSpeed);
+
+    smoothScrollTo("#scrollToConnect", "html, body", $("#Connect").offset().top+secNext, scrollSpeed);
+
+    smoothScrollTo("#backToTop", "html, body", 0, scrollSpeed);
 // --------------------------------------------------------------------------
 });
+
 
 function mouseOverOne(){
 	document.getElementById("answer1").style.display = "block";
