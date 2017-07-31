@@ -270,6 +270,10 @@ table {
     align-items: center;
 } */
 
+.responsiveTable{
+    display: none;
+}
+
 .faq-left, .connect-left {
     width: 75%;
     height: 100%;
@@ -353,14 +357,36 @@ input[type=submit] {
     font-family: "museo-sans";
 }
 
+.responsive-form{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
-    .header, .header-one, .heaader-two, .header-three, .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4 {
+    .header, .header-one, .heaader-two, .header-three, .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle {
         display: none;
     }
 
-    .Overview3{
+    .Overview3, table{
         height: 100%;
         width: 100%;
     }
 
+    .responsiveTable{
+	display: block;
+    }
+    
+    .faq-head, .form-head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive-form{
+	display: block;
+    }
+
+    .circle{
+	display: none;
+    }
 }
+
