@@ -235,7 +235,7 @@ ul {
 
 .section-about-left, .section-intern-left, .section-HF-left, .section-about-middle,.section-intern-middle,.section-HF-middle, .section-about-right, .section-intern-right, .section-HF-right {
     flex: 1 100%;
-    height: 500px;
+    height: 322px;
 }
 
 .section-about-left, .section-intern-left, .section-HF-left {
@@ -369,11 +369,39 @@ input[type=submit] {
     display: none;
 }
 
+
 @media only screen and (max-width: 768px) {
-    .header, .header-one, .heaader-two, .header-three, .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle {
+    .header, .header-one, .heaader-two, .header-three, .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
         display: none;
     }
 
+    .padding-intern {
+	padding-top: 400%;
+    }
+
+    .padding-HF {
+	padding-top: 700%;
+    }
+
+    .padding-FAQ {
+	padding-top: 600%;
+    }
+
+    .padding-connect {
+	padding-top: 100%;
+    }
+    
+    
+    .section-about-right, .section-intern-right, .section-HF-right {
+	overflow-y: visible; 
+	width: 100%;
+	height: 100%;
+    }
+
+    .section-about-container, .section-intern-container, .section-HF-container {
+	padding-top: 30%;
+	
+    }
     .Overview3, table{
         height: 100%;
         width: 100%;
