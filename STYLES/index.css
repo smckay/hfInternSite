@@ -7,9 +7,6 @@ html, body {
 	height: 100%;
 }
 
-p {
-    font-family: Futura, sans-serif;
-}
 
 ul {
     list-style-type: none;
@@ -185,7 +182,6 @@ ul {
 }
 
 .textContainer {
-    font-family: Arial, sans-serif;
     margin: auto;
     line-height: 2.5;
     text-align: center;
@@ -198,7 +194,6 @@ ul {
     transition: color 0.15s, font-size 0.13s;
     color: DodgerBlue;
     font-size: 20px;
-    font-family: Arial Rounded MT Bold, sans-serif;
     cursor: default;
 }
 
@@ -251,7 +246,6 @@ ul {
 
 .section-about-right, .section-intern-right, .section-HF-right {
     order: 3;
-    font-family: Futura, sans-serif;
     text-align: center;
     font-size: 15px;
     overflow-y: scroll;
@@ -354,7 +348,6 @@ input[type=submit] {
 
 .section-right {
     order: 3;
-    font-family: Futura, sans-serif;
     text-align: center;
     font-size: 15px;
     overflow-y: scroll;
