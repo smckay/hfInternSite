@@ -28,40 +28,29 @@ ul {
 	background-color: #3D3D3D;
 	top: 0;
 	width: 100%;
-	height: 11%;
+	height: 12%;
 	display: flex;
-	align-items: center;
+	flex-direction: row;
 }
 
 .header-one {
-	top: 0;
-	overflow: hidden;
-	width: 11%;
-	height: 100%;
-	display: flex;
-	float: left;
+    top: 0;
+    width: 11%;
+    height: 100%;
 }
 .header-two {
-	top: 0;
-	overflow: hidden;
 	width: 17%;
 	height: 100%;
-	display: flex;
-	float: left;
 }
 
 .header-three {
-	top: 0;
-	overflow: hidden;
-	width: 12%;
+	width: 11%;
 	height: 100%;
-	display: flex;
-	float: left;
-	align-items: center;
-	justify-content: center;
 }
 
-.header-three p{
+.header-three p {
+    position: absolute;
+    bottom: 0;
 	color: #FFFFFE;
 }
 
@@ -79,7 +68,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 5.5%;
+	height: 7%;
 	font-family: "Arial Verdana";
 }
 
@@ -371,9 +360,26 @@ input[type=submit] {
 
 
 @media only screen and (max-width: 768px) {
-    .header, .header-one, .heaader-two, .header-three, .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
+      .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
         display: none;
-    }
+     }
+
+      .header {
+	  justify-content: space-between;
+      }
+      
+     .header-one {
+	 display: none;
+     }
+     
+     .header-two {
+	 width: 50%;
+	 float: none;
+     }
+
+     .header-three {
+	 width: 50%;
+     }
 
     .padding-intern {
 	padding-top: 400%;
