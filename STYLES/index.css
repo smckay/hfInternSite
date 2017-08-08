@@ -217,6 +217,23 @@ ul {
     flex-wrap: nowrap;
 }
 
+#testContent {
+    padding-top: 10%;
+}
+
+#testContent img {
+    float: left;
+    border-radius: 30%;
+    height: 20%;
+    width: 30%;
+}
+
+#testContent header {
+    background-color: lime;
+    color: white;
+    line-height: 1.2;
+}
+
 .section-about-left, .section-intern-left, .section-HF-left, .section-about-middle,.section-intern-middle,.section-HF-middle, .section-about-right, .section-intern-right, .section-HF-right {
     flex: 1 100%;
     height: 322px;
@@ -230,7 +247,7 @@ ul {
 
 .section-about-middle, .section-intern-middle, .section-HF-middle {
     order: 2;
-    flex-shrink: 1.5;
+    flex-shrink: 1.8; 
 }
 
 .section-about-right, .section-intern-right, .section-HF-right {
