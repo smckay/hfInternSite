@@ -81,7 +81,7 @@ ul {
 }
 
 .navbar a:hover {
-    background-color: DarkGreen;
+    background-color:#7ABB43;
     border-style: inset;
     color: white;
     transition: color 0.3s, background-color 0.15s, border-style 0.6s;
