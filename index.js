@@ -120,3 +120,52 @@ function mouseOverFour(){
 function mouseOutFour(){
 	document.getElementById("answer4").style.display = "none";
 }
+
+function mouseOverFive(){
+	document.getElementById("answer5").style.display = "block";
+}
+
+function mouseOutFive(){
+	document.getElementById("answer5").style.display = "none";
+}
+
+function mouseOverSix(){
+	document.getElementById("answer6").style.display = "block";
+}
+
+function mouseOutSix(){
+	document.getElementById("answer6").style.display = "none";
+}
+
+function mouseOverSeven(){
+	document.getElementById("answer7").style.display = "block";
+}
+
+function mouseOutSeven(){
+	document.getElementById("answer7").style.display = "none";
+}
+
+function mouseOverEight(){
+	document.getElementById("answer8").style.display = "block";
+}
+
+function mouseOutEight(){
+	document.getElementById("answer8").style.display = "none";
+}
+
+function mouseOverNine(){
+	document.getElementById("answer9").style.display = "block";
+}
+
+function mouseOutNine(){
+	document.getElementById("answer9").style.display = "none";
+}
+
+function mouseOverTen(){
+	document.getElementById("answer10").style.display = "block";
+}
+
+function mouseOutTen(){
+	document.getElementById("answer10").style.display = "none";
+}
+
