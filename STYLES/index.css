@@ -375,6 +375,21 @@ input[type=submit] {
     display: none;
 }
 
+.formdiv{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+}
+
+.formheader{
+	width: 100%;
+	height: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 @media only screen and (max-width: 768px) {
       .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
