@@ -36,6 +36,7 @@ $(document).ready(function(){
 
     var aboutSection = ".section-about-right";
     var internSection = ".section-intern-right";
+    var aboutHFsection = ".section-HF-right";
 // -------------------------------------------------------------------------- 
 
 // GENERAL HTML
@@ -76,10 +77,10 @@ $(document).ready(function(){
 // All jQuery/Javascript functions pertaining to ABOUT section
 // --------------------------------------------------------------------------
     smoothScrollTo("#goToInternProgram", aboutSection, 0, scrollSpeed);
-    smoothScrollTo("#goToMentoring", aboutSection, $("#_mentoring").offset().top, scrollSpeed);
-    smoothScrollTo("#goToRoundtables", aboutSection, aboutHeight-200, scrollSpeed);
-    smoothScrollTo("#goToProjects", aboutSection, aboutHeight, scrollSpeed);
-    smoothScrollTo("#goToCollaterol", aboutSection, aboutHeight, scrollSpeed);
+    smoothScrollTo("#goToMentoring", aboutSection, 570, scrollSpeed);
+    smoothScrollTo("#goToRoundtables", aboutSection, 1900, scrollSpeed);
+    smoothScrollTo("#goToProjects", aboutSection, 2780, scrollSpeed);
+    smoothScrollTo("#goToNetworking", aboutSection, 3800, scrollSpeed);
 // --------------------------------------------------------------------------
 
 // SECTION: INTERN
@@ -89,6 +90,14 @@ $(document).ready(function(){
     smoothScrollTo("#goToVideos", internSection, posNext, scrollSpeed);
     smoothScrollTo("#goToTestimonials", internSection, posNext*2, scrollSpeed);
 // --------------------------------------------------------------------------
+
+// SECTION: ABOUT HF
+// All jQuery/Javascript functions pertaining to ABOUT_HF section    
+// --------------------------------------------------------------------------
+
+    smoothScrollTo("#goToAboutHF", aboutHFsection, 0, scrollSpeed);
+    smoothScrollTo("#goToMission", aboutHFsection, 520, scrollSpeed);
+    smoothScrollTo("#goToValues", aboutHFsection, 890, scrollSpeed);
 });
 
 function mouseOverOne(){
