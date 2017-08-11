@@ -79,8 +79,8 @@ $(document).ready(function(){
     smoothScrollTo("#goToInternProgram", aboutSection, 0, scrollSpeed);
     smoothScrollTo("#goToMentoring", aboutSection, 570, scrollSpeed);
     smoothScrollTo("#goToRoundtables", aboutSection, 1900, scrollSpeed);
-    smoothScrollTo("#goToProjects", aboutSection, 2780, scrollSpeed);
-    smoothScrollTo("#goToNetworking", aboutSection, 3800, scrollSpeed);
+    smoothScrollTo("#goToProjects", aboutSection, 2865, scrollSpeed);
+    smoothScrollTo("#goToNetworking", aboutSection, 4050, scrollSpeed);
 // --------------------------------------------------------------------------
 
 // SECTION: INTERN
