@@ -10,6 +10,7 @@ function smoothScrollTo(itemClick, itemScrollActiv, posValue, scrollSpeed) {
 	$(itemScrollActiv).animate({
 	    scrollTop: posValue}, scrollSpeed);
     });
+    console.log($(window).height());
 }
 
 /*
@@ -53,6 +54,7 @@ $(document).ready(function(){
     rH(".section-left");
     rH(".section-right");
     rH(".section-middle");
+
     
     smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top + secNext, scrollSpeed);
@@ -74,7 +76,7 @@ $(document).ready(function(){
 // All jQuery/Javascript functions pertaining to ABOUT section
 // --------------------------------------------------------------------------
     smoothScrollTo("#goToInternProgram", aboutSection, 0, scrollSpeed);
-    smoothScrollTo("#goToMentoring", aboutSection, aboutHeight-100, scrollSpeed);
+    smoothScrollTo("#goToMentoring", aboutSection, $("#_mentoring").offset().top, scrollSpeed);
     smoothScrollTo("#goToRoundtables", aboutSection, aboutHeight-200, scrollSpeed);
     smoothScrollTo("#goToProjects", aboutSection, aboutHeight, scrollSpeed);
     smoothScrollTo("#goToCollaterol", aboutSection, aboutHeight, scrollSpeed);
