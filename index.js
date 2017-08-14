@@ -55,6 +55,7 @@ $(document).ready(function(){
     rH(".section-left");
     rH(".section-right");
     rH(".section-middle");
+
     
     smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top + secNext, scrollSpeed);
@@ -78,8 +79,8 @@ $(document).ready(function(){
     smoothScrollTo("#goToInternProgram", aboutSection, 0, scrollSpeed);
     smoothScrollTo("#goToMentoring", aboutSection, 570, scrollSpeed);
     smoothScrollTo("#goToRoundtables", aboutSection, 1900, scrollSpeed);
-    smoothScrollTo("#goToProjects", aboutSection, 2780, scrollSpeed);
-    smoothScrollTo("#goToNetworking", aboutSection, 3800, scrollSpeed);
+    smoothScrollTo("#goToProjects", aboutSection, 2865, scrollSpeed);
+    smoothScrollTo("#goToNetworking", aboutSection, 4050, scrollSpeed);
 // --------------------------------------------------------------------------
 
 // SECTION: INTERN

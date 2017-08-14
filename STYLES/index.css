@@ -7,7 +7,7 @@ html, body {
 	height: 100%;
 }
 
-.bgimg-intro {
+.bgimg-intro, .bgimg-FAQ, .bgimg-contact {
     position: relative;
     opacity: 0.8;
     background-attachment: fixed;
@@ -19,7 +19,17 @@ html, body {
 .bgimg-intro {
     background-image: url("BrokerFAQ.jpg");
     min-height: 100%;
-    z-index: -1;
+}
+
+.bgimg-FAQ {
+    background-image: url("InternFAQs.jpg");
+    min-height: 100%;
+}
+
+.bgimg-contact {
+    background-image: url("InternContact.jpg");
+    min-height: 100%;
+    opacity: 0.7;
 }
 
 ul {
@@ -42,6 +52,7 @@ ul {
 	height: 12%;
 	display: flex;
 	flex-direction: row;
+	z-index: 1;
 }
 
 .testFlex {
@@ -88,7 +99,6 @@ ul {
 	justify-content: center;
 	height: 7%;
 	font-famly: "Arial Verdana";
-	z-index: 3;
 }
 
 .navbar a {
@@ -163,7 +173,6 @@ ul {
 	align-items: center;
 	justify-content: center;
         transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s;
-	z-index: 2;
 }
 
 .circle:hover {
@@ -234,10 +243,18 @@ ul {
 }
 */
 
-.section-about-container, .section-intern-container, .section-HF-container {
+.section-intro-container, .section-about-container, .section-intern-container, .section-HF-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+
+.space-filler {
+    padding-top: 10%;
+}
+
+.section-intro-container {
+    text-align: center;
 }
 
 #testContent {
@@ -261,6 +278,19 @@ ul {
     flex: 1 100%;
     height: 322px;
 }
+
+.section-intro-text {
+    flex: 1 100%;
+    line-height: 2.5;
+    margin: auto;
+    color: white;
+
+}
+
+.aside-1, .aside-2 {
+    flex: 1 80%;
+}
+
 
 .section-about-left, .section-intern-left, .section-HF-left {
     order: 1;
@@ -417,8 +447,17 @@ input[type=submit] {
 @media only screen and (max-width: 768px) {
       .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
         display: none;
-     }
+      }
 
+      .space-filler {
+	  padding-top: 30%;
+      }
+      
+      .aside-1, .aside-2 {
+	  flex: 1 0%;
+      }
+
+      
       .header {
 	  justify-content: space-between;
       }
@@ -437,11 +476,11 @@ input[type=submit] {
      }
 
     .padding-intern {
-	padding-top: 400%;
+	padding-top: 1100%;
     }
 
     .padding-HF {
-	padding-top: 700%;
+	padding-top: 500%;
     }
 
     .padding-FAQ {
