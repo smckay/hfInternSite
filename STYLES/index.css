@@ -224,6 +224,11 @@ ul {
     flex-wrap: nowrap;
 }
 
+
+.section-intro-container {
+    text-align: center;
+}
+
 #testContent {
     padding-top: 10%;
 }
@@ -241,9 +246,20 @@ ul {
     line-height: 1.2;
 }
 
-.section-intro-text, .section-about-left, .section-intern-left, .section-HF-left, .section-about-middle,.section-intern-middle,.section-HF-middle, .section-about-right, .section-intern-right, .section-HF-right {
+.section-about-left, .section-intern-left, .section-HF-left, .section-about-middle,.section-intern-middle,.section-HF-middle, .section-about-right, .section-intern-right, .section-HF-right {
     flex: 1 100%;
     height: 322px;
+}
+
+.section-intro-text {
+    flex: 1 100%;
+    line-height: 2.5;
+    height: 322px;
+
+}
+
+.aside-1, .aside-2 {
+    flex: 1 80%;
 }
 
 .section-about-left, .section-intern-left, .section-HF-left {
@@ -403,6 +419,10 @@ input[type=submit] {
         display: none;
      }
 
+      .aside-1, .aside-2 {
+	  flex: 1 0%;
+      }
+      
       .header {
 	  justify-content: space-between;
       }
