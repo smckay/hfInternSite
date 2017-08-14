@@ -224,6 +224,9 @@ ul {
     flex-wrap: nowrap;
 }
 
+.space-filler {
+    padding-top: 10%;
+}
 
 .section-intro-container {
     text-align: center;
@@ -254,13 +257,14 @@ ul {
 .section-intro-text {
     flex: 1 100%;
     line-height: 2.5;
-    height: 322px;
+    margin: auto;
 
 }
 
 .aside-1, .aside-2 {
     flex: 1 80%;
 }
+
 
 .section-about-left, .section-intern-left, .section-HF-left {
     order: 1;
@@ -419,9 +423,14 @@ input[type=submit] {
         display: none;
       }
 
+      .space-filler {
+	  padding-top: 30%;
+      }
+      
       .aside-1, .aside-2 {
 	  flex: 1 0%;
       }
+
       
       .header {
 	  justify-content: space-between;
