@@ -417,7 +417,7 @@ input[type=submit] {
 @media only screen and (max-width: 768px) {
       .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
         display: none;
-     }
+      }
 
       .aside-1, .aside-2 {
 	  flex: 1 0%;
