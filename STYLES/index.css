@@ -7,6 +7,20 @@ html, body {
 	height: 100%;
 }
 
+.bgimg-intro {
+    position: relative;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-intro {
+    background-image: url("BrokerFAQ.jpg");
+    min-height: 100%;
+    z-index: -1;
+}
 
 ul {
     list-style-type: none;
@@ -73,7 +87,8 @@ ul {
 	align-items: center;
 	justify-content: center;
 	height: 7%;
-	font-family: "Arial Verdana";
+	font-famly: "Arial Verdana";
+	z-index: 3;
 }
 
 .navbar a {
@@ -118,6 +133,7 @@ ul {
 	margin: auto;
 	line-height: 2.5;
 	font-family: Arial, sans-serif;
+	z-index: 1;
 }
 
 
@@ -147,7 +163,7 @@ ul {
 	align-items: center;
 	justify-content: center;
         transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s;
-
+	z-index: 2;
 }
 
 .circle:hover {
