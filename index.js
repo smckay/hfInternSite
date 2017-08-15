@@ -57,9 +57,9 @@ $(document).ready(function(){
     rH(".section-middle");
 
     
-    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top+secNext, scrollSpeed);
-    smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top + secNext, scrollSpeed);
-    smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top+secNext, scrollSpeed);
+    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top, scrollSpeed);
+    smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top, scrollSpeed);
+    smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top, scrollSpeed);
     smoothScrollTo("#scrollToFAQ", "html, body", $("#FAQ").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#scrollToConnect", "html, body", $("#Connect").offset().top+secNext, scrollSpeed);
 

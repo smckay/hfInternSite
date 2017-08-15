@@ -45,6 +45,7 @@ html, body {
 .bgimg-HF {
     background-image: url("Brandon_Tom_Steve_Wht.jpg");
     min-height: 100%;
+    opacity: 1;
 }
 
 ul {
@@ -241,31 +242,10 @@ ul {
     
 }
 
-/*
-.about_rightScroll {
-    float: right;
-    width: 100%;
-    height: 40%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.about_rightScrollContent {
-    float: right;
-    font-family: Arial, sans-serif;
-    line-height: 2.5;
-    width: 30%;
-}
-*/
-
 .section-intro-container, .section-about-container, .section-intern-container, .section-HF-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
-
-.section-about-container {
-    flex-flow: row wrap;
 }
 
 .space-filler {
@@ -297,13 +277,16 @@ ul {
     flex: 1 100%;
 }
 
-.section-about-left {
-    order: 1;
+.section-about-right {
+    background-color: #869BAE;
 }
 
-.section-about-right {
-    background-color: lightblue;
-    order: 2;
+.section-intern-right {
+    background-color: #50674B;
+}
+
+.section-HF-right {
+    background-color: #F9F9F9;
 }
 
 .section-intro-text {
@@ -320,18 +303,15 @@ ul {
 
 
 .section-about-left, .section-intern-left, .section-HF-left {
-    order: 1;
     text-align: center;
     line-height: 2.5;
 }
 
 .section-about-middle, .section-intern-middle, .section-HF-middle {
-    order: 2;
     flex-shrink: 1.8; 
 }
 
 .section-about-right, .section-intern-right, .section-HF-right {
-    order: 3;
     text-align: center;
     font-size: 15px;
     overflow-y: scroll;
