@@ -7,7 +7,7 @@ html, body {
 	height: 100%;
 }
 
-.bgimg-intro, .bgimg-FAQ, .bgimg-contact {
+.bgimg-intro, .bgimg-FAQ, .bgimg-contact, .bgimg-about, .bgimg-intern, .bgimg-HF {
     position: relative;
     opacity: 0.8;
     background-attachment: fixed;
@@ -30,6 +30,21 @@ html, body {
     background-image: url("InternContact.jpg");
     min-height: 100%;
     opacity: 0.7;
+}
+
+.bgimg-about {
+    background-image: url("Mentor_Mentee_Errol_DAundre1_Blu.jpg");
+    min-height: 100%;
+}
+
+.bgimg-intern {
+    background-image: url("FunConvos_Grn.jpg");
+    min-height: 100%;
+}
+
+.bgimg-HF {
+    background-image: url("Brandon_Tom_Steve_Wht.jpg");
+    min-height: 100%;
 }
 
 ul {
@@ -249,6 +264,10 @@ ul {
     flex-wrap: nowrap;
 }
 
+.section-about-container {
+    flex-flow: row wrap;
+}
+
 .space-filler {
     padding-top: 10%;
 }
@@ -276,7 +295,15 @@ ul {
 
 .section-about-left, .section-intern-left, .section-HF-left, .section-about-middle,.section-intern-middle,.section-HF-middle, .section-about-right, .section-intern-right, .section-HF-right {
     flex: 1 100%;
-    height: 322px;
+}
+
+.section-about-left {
+    order: 1;
+}
+
+.section-about-right {
+    background-color: lightblue;
+    order: 2;
 }
 
 .section-intro-text {
