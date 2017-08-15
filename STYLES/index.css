@@ -18,7 +18,7 @@ html, body {
 
 .bgimg-intro {
     background-image: url("BrokerFAQ.jpg");
-    min-height: 100%;
+    min-height: auto;
 }
 
 .bgimg-FAQ {
@@ -189,6 +189,7 @@ ul {
 	align-items: center;
 	justify-content: center;
         transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s;
+	z-index: 2;
 }
 
 .circle:hover {
@@ -201,6 +202,22 @@ ul {
     transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s;
 }
 
+
+#scrollToExperience.circle {
+    position: absolute;
+    margin-top: -1%;
+    margin-left: 48.9%;
+}
+
+#scrollToAboutHF.circle {
+    position: absolute;
+    margin-top: -4%;
+}
+
+#scrollToFAQ.circle {
+    position: absolute;
+    margin-top: -5%;
+}
 
 .triangle {
 	width: 0;
@@ -317,6 +334,7 @@ ul {
     overflow-y: scroll;
     line-height: 2.0;
 }
+
 
 td {
     border: 1px solid black;
