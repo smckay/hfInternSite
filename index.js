@@ -101,82 +101,134 @@ $(document).ready(function(){
 });
 
 function mouseOverOne(){
-	document.getElementById("answer1").style.display = "block";
-}
-
-function mouseOutOne(){
-	document.getElementById("answer1").style.display = "none";
+	if($('#answer1').css('display') == 'block'){
+		document.getElementById("answer1").style.display = "none";
+		document.getElementById("plusone").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer1").style.display = "block";
+		document.getElementById("plusone").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverTwo(){
-	document.getElementById("answer2").style.display = "block";
-}
-
-function mouseOutTwo(){
-	document.getElementById("answer2").style.display = "none";
+	if($('#answer2').css('display') == 'block'){
+		document.getElementById("answer2").style.display = "none";
+		document.getElementById("plustwo").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer2").style.display = "block";
+		document.getElementById("plustwo").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverThree(){
-	document.getElementById("answer3").style.display = "block";
-}
-
-function mouseOutThree(){
-	document.getElementById("answer3").style.display = "none";
+	if($('#answer3').css('display') == 'block'){
+		document.getElementById("answer3").style.display = "none";
+		document.getElementById("plusthree").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer3").style.display = "block";
+		document.getElementById("plusthree").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverFour(){
-	document.getElementById("answer4").style.display = "block";
-}
-
-function mouseOutFour(){
-	document.getElementById("answer4").style.display = "none";
+	if($('#answer4').css('display') == 'block'){
+		document.getElementById("answer4").style.display = "none";
+		document.getElementById("plusfour").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer4").style.display = "block";
+		document.getElementById("plusfour").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverFive(){
-	document.getElementById("answer5").style.display = "block";
-}
-
-function mouseOutFive(){
-	document.getElementById("answer5").style.display = "none";
+	if($('#answer5').css('display') == 'block'){
+		document.getElementById("answer5").style.display = "none";
+		document.getElementById("plusfive").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer5").style.display = "block";
+		document.getElementById("plusfive").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverSix(){
-	document.getElementById("answer6").style.display = "block";
-}
-
-function mouseOutSix(){
-	document.getElementById("answer6").style.display = "none";
+	if($('#answer6').css('display') == 'block'){
+		document.getElementById("answer6").style.display = "none";
+		document.getElementById("plussix").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer6").style.display = "block";
+		document.getElementById("plussix").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverSeven(){
-	document.getElementById("answer7").style.display = "block";
-}
-
-function mouseOutSeven(){
-	document.getElementById("answer7").style.display = "none";
+	if($('#answer7').css('display') == 'block'){
+		document.getElementById("answer7").style.display = "none";
+		document.getElementById("plusseven").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer7").style.display = "block";
+		document.getElementById("plusseven").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverEight(){
-	document.getElementById("answer8").style.display = "block";
-}
-
-function mouseOutEight(){
-	document.getElementById("answer8").style.display = "none";
+	if($('#answer8').css('display') == 'block'){
+		document.getElementById("answer8").style.display = "none";
+		document.getElementById("pluseight").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer8").style.display = "block";
+		document.getElementById("pluseight").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverNine(){
-	document.getElementById("answer9").style.display = "block";
-}
-
-function mouseOutNine(){
-	document.getElementById("answer9").style.display = "none";
+	if($('#answer9').css('display') == 'block'){
+		document.getElementById("answer9").style.display = "none";
+		document.getElementById("plusnine").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer9").style.display = "block";
+		document.getElementById("plusnine").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
 function mouseOverTen(){
-	document.getElementById("answer10").style.display = "block";
+	if($('#answer10').css('display') == 'block'){
+		document.getElementById("answer10").style.display = "none";
+		document.getElementById("plusten").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer10").style.display = "block";
+		document.getElementById("plusten").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 
-function mouseOutTen(){
-	document.getElementById("answer10").style.display = "none";
+function mouseOverEleven(){
+	if($('#answer11').css('display') == 'block'){
+		document.getElementById("answer11").style.display = "none";
+		document.getElementById("pluseleven").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer11").style.display = "block";
+		document.getElementById("pluseleven").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
+}
+
+function mouseOverTwelve(){
+	if($('#answer12').css('display') == 'block'){
+		document.getElementById("answer12").style.display = "none";
+		document.getElementById("plustwelve").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer12").style.display = "block";
+		document.getElementById("plustwelve").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
 }
 

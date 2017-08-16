@@ -358,6 +358,10 @@ table {
     align-items: center;
 } */
 
+td{
+	backgound-color: rgb(255, 255, 255);	
+}
+
 .responsiveTable{
     display: none;
 }
