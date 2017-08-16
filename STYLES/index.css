@@ -116,6 +116,8 @@ ul {
 	justify-content: center;
 	height: 7%;
 	font-famly: "Arial Verdana";
+	position: fixed;
+	z-index: 10;
 }
 
 .navbar a {
@@ -269,7 +271,7 @@ ul {
 }
 
 .space-filler {
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .section-intro-container {
