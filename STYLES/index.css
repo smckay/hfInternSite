@@ -191,6 +191,7 @@ ul {
 	justify-content: center;
         transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s;
 	z-index: 2;
+	opacity: .5;
 }
 
 .circle:hover {
