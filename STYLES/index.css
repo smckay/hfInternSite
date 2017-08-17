@@ -36,6 +36,8 @@ html, body {
     background-image: url("Mentor_Mentee_Errol_DAundre1_Blu.jpg");
     min-height: 100%;
     opacity: 1;
+    background-size: 74% 104%;
+    background-position: left;
 }
 
 .bgimg-intern {
@@ -47,10 +49,14 @@ html, body {
     background-image: url("Brandon_Tom_Steve_Wht.jpg");
     min-height: 100%;
     opacity: 1;
+    background-size: 74% 104%;
+    background-position: left;
 }
 
 ul {
     list-style-type: none;
+    position: relative;
+    margin: 27%;
 }
 
 /*
@@ -135,50 +141,6 @@ ul {
     color: white;
     transition: color 0.3s, background-color 0.15s, border-style 0.6s;
 }
-
-.Overview {
-	width: 100%;
-	height: 13.5%;
-	float: left;
-}
-
-.Overview2 {
-	width: 25%;
-	height: 40%;
-	float: left;
-}
-
-
-.Overview3 {
-	width: 50%;
-	height: 40%;
-	float: left;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	margin: auto;
-	line-height: 2.5;
-	font-family: Arial, sans-serif;
-	z-index: 1;
-}
-
-
-.Overview4 {
-	width: 25%;
-	height: 40%;
-	display: flex;
-	float: left;
-}
-
-.Overview5, .bottom-button {
-	width: 100%;
-	height: 5%;
-	float: left;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}	
 
 .circle {
 	border-radius: 50%;
@@ -267,6 +229,10 @@ ul {
     flex-wrap: nowrap;
 }
 
+.section-about-container, .section-intern-container, .section-HF-container {
+    height: 84%;
+}
+
 .space-filler {
     padding-top: 10%;
 }
@@ -324,10 +290,6 @@ ul {
 .section-about-left, .section-intern-left, .section-HF-left {
     text-align: center;
     line-height: 2.5;
-}
-
-.section-about-middle, .section-intern-middle, .section-HF-middle {
-    flex-shrink: 1.8; 
 }
 
 .section-about-right, .section-intern-right, .section-HF-right {
@@ -418,7 +380,6 @@ input[type=submit] {
 
 .section-left, .section-middle, .section-right {
     flex: 1 100%;
-    height: 500px;
 }
 
 .section-left {
@@ -472,7 +433,7 @@ input[type=submit] {
 
 
 @media only screen and (max-width: 768px) {
-      .navbar, .navbar-placeholder, .Overview, .Overview2, .Overview4, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
+      .navbar, .navbar-placeholder, .section-left, .section-right, .section-middle, .section-about-left, .section-about-middle, .section-intern-left, .section-intern-middle, .section-HF-left, .section-HF-middle, .circle, .triangle, .triangle-up  {
         display: none;
       }
 
@@ -529,7 +490,8 @@ input[type=submit] {
 	padding-top: 30%;
 	
     }
-    .Overview3, table{
+
+    table{
         height: 100%;
         width: 100%;
     }
