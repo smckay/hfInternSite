@@ -18,12 +18,15 @@ function smoothScrollTo(itemClick, itemScrollActiv, posValue, scrollSpeed) {
     @divtag: id/class name that is intended to be responsive for autoscrolling purposes
 */
 
+/*
 function rH(divtag) {
     $(window).resize(function() {
 	var newHeight = $(window).height() * 0.505;
 	$(divtag).height(newHeight);
     }).resize();
 }
+*/
+
 
 $(document).ready(function(){
 
@@ -42,7 +45,7 @@ $(document).ready(function(){
 // GENERAL HTML
 // THESE FUNCTIONS EFFECT OVERALL HTML PAGE
 // --------------------------------------------------------------------------
-    
+/*    
     rH(".section-about-left");
     rH(".section-about-right");
     rH(".section-about-middle");
@@ -55,11 +58,11 @@ $(document).ready(function(){
     rH(".section-left");
     rH(".section-right");
     rH(".section-middle");
-
+*/
     
-    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top, scrollSpeed);
-    smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top, scrollSpeed);
-    smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top, scrollSpeed);
+    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top+200, scrollSpeed);
+    smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top+120, scrollSpeed);
+    smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top+250, scrollSpeed);
     smoothScrollTo("#scrollToFAQ", "html, body", $("#FAQ").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#scrollToConnect", "html, body", $("#Connect").offset().top+secNext, scrollSpeed);
 
