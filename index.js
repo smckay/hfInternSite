@@ -5,12 +5,20 @@
     @posValue: position coordinates in which the scrolling should scroll to.
     @scrollSpeed: speed of scrolling.
 */
+function smoothScrollSectionTo(itemClick, itemScrollActiv, posValue, scrollSpeed) {
+    $(itemClick).click(function(){
+	$(itemScrollActiv).animate({
+	    scrollTop: $(posValue).offset().top - $(itemScrollActiv).offset().top + $(itemScrollActiv).scrollTop()}, scrollSpeed);
+    });
+
+    
+}
+
 function smoothScrollTo(itemClick, itemScrollActiv, posValue, scrollSpeed) {
     $(itemClick).click(function(){
 	$(itemScrollActiv).animate({
 	    scrollTop: posValue}, scrollSpeed);
     });
-    console.log($(window).height());
 }
 
 /*
@@ -60,13 +68,13 @@ $(document).ready(function(){
     rH(".section-middle");
 */
     
-    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top+200, scrollSpeed);
+    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top, scrollSpeed);
     smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top+120, scrollSpeed);
     smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top+250, scrollSpeed);
     smoothScrollTo("#scrollToFAQ", "html, body", $("#FAQ").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#scrollToConnect", "html, body", $("#Connect").offset().top+secNext, scrollSpeed);
 
-    smoothScrollTo("#nav_scrollToAboutIntern", "html, body", $("#About").offset().top+secNext, scrollSpeed);
+    smoothScrollTo("#nav_scrollToAboutIntern", "html, body", $("#About").offset().top, scrollSpeed);
     smoothScrollTo("#nav_scrollToExperience", "html, body", $("#Experience").offset().top + secNext, scrollSpeed);
     smoothScrollTo("#nav_scrollToAboutHF", "html, body", $("#AboutHF").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#nav_scrollToFAQ", "html, body", $("#FAQ").offset().top+secNext, scrollSpeed);
@@ -79,28 +87,27 @@ $(document).ready(function(){
 // SECTION: ABOUT
 // All jQuery/Javascript functions pertaining to ABOUT section
 // --------------------------------------------------------------------------
-    smoothScrollTo("#goToInternProgram", aboutSection, 0, scrollSpeed);
-    smoothScrollTo("#goToMentoring", aboutSection, 570, scrollSpeed);
-    smoothScrollTo("#goToRoundtables", aboutSection, 1900, scrollSpeed);
-    smoothScrollTo("#goToProjects", aboutSection, 2865, scrollSpeed);
-    smoothScrollTo("#goToNetworking", aboutSection, 4050, scrollSpeed);
+    smoothScrollSectionTo("#goToInternProgram", aboutSection, "#_internProgram", scrollSpeed);
+    smoothScrollSectionTo("#goToMentoring", aboutSection, "#_mentoring", scrollSpeed);
+    smoothScrollSectionTo("#goToRoundtables", aboutSection, "#_roundtables", scrollSpeed);
+    smoothScrollSectionTo("#goToProjects", aboutSection, "#_projects", scrollSpeed);
+    smoothScrollSectionTo("#goToNetworking", aboutSection, "#_networking", scrollSpeed);
 // --------------------------------------------------------------------------
 
 // SECTION: INTERN
 // All jQuery/Javascript functions pertaining to INTERN section
 // --------------------------------------------------------------------------
-    smoothScrollTo("#goToInternExperience", internSection, 0, scrollSpeed);
-    smoothScrollTo("#goToVideos", internSection, posNext, scrollSpeed);
-    smoothScrollTo("#goToTestimonials", internSection, posNext*2, scrollSpeed);
+    smoothScrollSectionTo("#goToVideos", internSection, "#_videos", scrollSpeed);
+    smoothScrollSectionTo("#goToTestimonials", internSection, "#_testimonials", scrollSpeed);
 // --------------------------------------------------------------------------
 
 // SECTION: ABOUT HF
 // All jQuery/Javascript functions pertaining to ABOUT_HF section    
 // --------------------------------------------------------------------------
 
-    smoothScrollTo("#goToAboutHF", aboutHFsection, 0, scrollSpeed);
-    smoothScrollTo("#goToMission", aboutHFsection, 520, scrollSpeed);
-    smoothScrollTo("#goToValues", aboutHFsection, 890, scrollSpeed);
+    smoothScrollSectionTo("#goToAboutHF", aboutHFsection, "#_aboutHF", scrollSpeed);
+    smoothScrollSectionTo("#goToMission", aboutHFsection, "#_ourMission", scrollSpeed);
+    smoothScrollSectionTo("#goToValues", aboutHFsection, "#_ourValues", scrollSpeed);
 });
 
 function mouseOverOne(){

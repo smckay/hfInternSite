@@ -165,7 +165,8 @@ ul {
     background-color: black;
     cursor: pointer;
     margin-left: 48.65%;
-    transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s;
+    opacity: 1;
+    transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s, opacity 0.3s;
 }
 
 
