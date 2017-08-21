@@ -98,12 +98,14 @@ ul {
 .header-three {
 	width: 11%;
 	height: 100%;
+	display: table;
 }
 
 .header-three p {
-    position: absolute;
-    top: 40px;
-	color: #FFFFFE;
+	color: #FFFFFF;
+  	text-align:center; 
+  	vertical-align: middle;
+  	display: table-cell;  
 }
 
 .navbar-placeholder {

@@ -242,3 +242,14 @@ function mouseOverTwelve(){
 	}
 }
 
+function mouseOverThirteen(){
+	if($('#answer13').css('display') == 'block'){
+		document.getElementById("answer13").style.display = "none";
+		document.getElementById("plusthirteen").src="https://vignette4.wikia.nocookie.net/scribblenauts/images/9/97/Plus_Sign.png/revision/latest?cb=20140409201237";
+	}
+	else{
+		document.getElementById("answer13").style.display = "block";
+		document.getElementById("plusthirteen").src="https://d30y9cdsu7xlg0.cloudfront.net/png/8299-200.png";
+	}
+}
+
