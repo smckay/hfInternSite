@@ -36,7 +36,7 @@ html, body {
     background-image: url("Mentor_Mentee_Errol_DAundre1_Blu.jpg");
     min-height: 100%;
     opacity: 1;
-    background-size: 74% 104%;
+    background-size: 77% 104%;
     background-position: left;
 }
 
@@ -164,7 +164,8 @@ ul {
     background-color: black;
     cursor: pointer;
     margin-left: 48.65%;
-    transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s;
+    opacity: 1;
+    transition: background-color 0.3s, width 0.13s, height 0.13s, margin-left 0.13s, opacity 0.3s;
 }
 
 
@@ -232,7 +233,7 @@ ul {
 }
 
 .section-about-container, .section-intern-container, .section-HF-container {
-    height: 84%;
+    height: 73%;
 }
 
 .space-filler {
