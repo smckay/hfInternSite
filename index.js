@@ -68,13 +68,13 @@ $(document).ready(function(){
     rH(".section-middle");
 */
     
-    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top, scrollSpeed);
-    smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top+120, scrollSpeed);
-    smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top+250, scrollSpeed);
+    smoothScrollTo("#scrollToAboutIntern", "html, body", $("#About").offset().top + ($("#About").offset().top/4), scrollSpeed);
+    smoothScrollTo("#scrollToExperience", "html, body", $("#Experience").offset().top + 50, scrollSpeed);
+    smoothScrollTo("#scrollToAboutHF", "html, body", $("#AboutHF").offset().top + 150, scrollSpeed);
     smoothScrollTo("#scrollToFAQ", "html, body", $("#FAQ").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#scrollToConnect", "html, body", $("#Connect").offset().top+secNext, scrollSpeed);
 
-    smoothScrollTo("#nav_scrollToAboutIntern", "html, body", $("#About").offset().top, scrollSpeed);
+    smoothScrollTo("#nav_scrollToAboutIntern", "html, body", $("#About").offset().top + ($("#About").offset().top/4), scrollSpeed);
     smoothScrollTo("#nav_scrollToExperience", "html, body", $("#Experience").offset().top + secNext, scrollSpeed);
     smoothScrollTo("#nav_scrollToAboutHF", "html, body", $("#AboutHF").offset().top+secNext, scrollSpeed);
     smoothScrollTo("#nav_scrollToFAQ", "html, body", $("#FAQ").offset().top+secNext, scrollSpeed);
